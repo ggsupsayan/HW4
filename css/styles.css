@@ -35,7 +35,6 @@ body {
   background-color: var(--white);
 }
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .header div {
@@ -71,12 +70,15 @@ body {
   padding: 0;
 }
 .menu-list > .menu-item {
+  position: relative;
+  padding: 24px 0;
   list-style: none;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+
 }
 .menu-item a:hover,
 .menu-item:focus {
@@ -84,6 +86,26 @@ body {
 }
 .menu-item a {
   text-decoration: none;
+}
+.studio::after{
+position: absolute;
+bottom: -1px;
+width: 100%;
+content:'';
+width: 48px;
+display: block;
+border: 2px solid var(--ocean);
+border-radius: 2px;
+}
+.portfolio::after{
+  position: absolute;
+bottom: -1px;
+content:'';
+width: 48px;
+display: block;
+border: 2px solid var(--ocean);
+border-radius: 2px;
+width: 100;
 }
 /* Номер телефона і почта */
 .mail,
@@ -112,7 +134,13 @@ body {
 }
 /* Секція з кнопкою */
 .first-section {
+  max-width: 1440px;
+  margin: auto;
   background-color: var(--navy-blue);
+  background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 188px 0;
 }
@@ -159,6 +187,12 @@ body {
 }
 .advantages-list-item {
   width: calc((100% - 72px) / 3);
+}
+.advantages-list-item::before{
+  content: '';
+  display: block;
+  height: 112px;
+  background: var(--cloud);
 }
 .advantages-list h3 {
   margin: 0 auto;
