@@ -18,6 +18,7 @@ h3,
 p {
   padding: 0;
   margin: 0 auto;
+  list-style: none;
 }
 .container {
   width: 1158px;
@@ -195,6 +196,9 @@ width: 100;
   background: var(--cloud);
 } */
 .advantages-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 112px;
   background-color: var(--cloud);
   margin-bottom: 8px;
@@ -294,12 +298,43 @@ background-color: var(--cloud);
   list-style: none;
   gap: 24px;
   justify-content: center;
+  align-items: center;
 }
-.socials-team > .socials-team-item{
-background-color: var(--iris);
-width: 40px;
-height: 40px;
-border-radius: 50%;
+
+.socials-link{
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+/* Customers*/
+.customers{
+  text-align: center;
+  padding: 120px 0;
+}
+.customers h2{
+  margin-bottom: 72px;
+}
+.customers-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-link{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 2px;
+}
+.customers-list-item{
+  height: 88px;
+  width: calc((100% - 120px)/6);
 }
 /* Підвал */
 .footer {
@@ -337,10 +372,13 @@ border-radius: 50%;
   display: flex;
   gap: 16px;
 }
-.socials-list > .socials-list-item{
-    background-color: var(--iris);
-  width: 50px;
-  height: 50px;
+.socials-link-footer{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
