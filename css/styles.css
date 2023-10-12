@@ -188,11 +188,16 @@ width: 100;
 .advantages-list-item {
   width: calc((100% - 72px) / 3);
 }
-.advantages-list-item::before{
+/* .advantages-list-item::before{
   content: '';
   display: block;
   height: 112px;
   background: var(--cloud);
+} */
+.advantages-svg{
+  height: 112px;
+  background-color: var(--cloud);
+  margin-bottom: 8px;
 }
 .advantages-list h3 {
   margin: 0 auto;
@@ -242,6 +247,7 @@ width: 100;
 .third-section {
   padding: 120px 0;
   text-align: center;
+background-color: var(--cloud);
 }
 .cards-title {
   margin: 0 auto;
@@ -272,16 +278,28 @@ width: 100;
   letter-spacing: 0.4px;
 }
 .team-list p {
-  margin: 0 auto;
+  margin-bottom: 12px;
   font-size: 16px;
   font-style: normal;
-  font-weight: 00;
+  font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
 .team-info {
   margin: 0 auto;
   padding: 32px 16px;
+}
+.socials-team{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  justify-content: center;
+}
+.socials-team > .socials-team-item{
+background-color: var(--iris);
+width: 40px;
+height: 40px;
+border-radius: 50%;
 }
 /* Підвал */
 .footer {
@@ -303,9 +321,9 @@ width: 100;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-.footer p {
-  display: inline-block;
-  margin: 0 auto;
+ .footer-text {
+  margin-bottom: 16px;
+  display: inline-flex;
   color: var(--cloud);
   font-size: 16px;
   font-style: normal;
@@ -313,6 +331,26 @@ width: 100;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   width: 264px;
+}
+.socials-list{
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+.socials-list > .socials-list-item{
+    background-color: var(--iris);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer-flex{
+  display: flex;
+  align-items: baseline;
+
+}
+.footer-info{
+margin-right: 120px;
 }
 /* ---------------------------------------------------Portfolio--------------------------------------------------------------- */
 /* Перша секція */
