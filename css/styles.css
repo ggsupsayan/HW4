@@ -6,6 +6,7 @@
   --cloud: #f4f4fd;
   --white: #ffffff;
   --cornflower: #e7e9fc;
+  --light-slate: #8E8F99;
 }
 img {
   width: 100%;
@@ -25,8 +26,8 @@ p {
   /* outline: 1px solid tomato; */
   margin-right: auto;
   margin-left: auto;
-  width: 1158px;
   align-items: center;
+  width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -170,6 +171,7 @@ width: 100;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 .title-button:hover,
 .title-button:focus {
@@ -316,9 +318,16 @@ background-color: var(--cloud);
   padding: 120px 0;
 }
 .customers h2{
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
   margin-bottom: 72px;
 }
 .customers-list{
+  width: 1128px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,12 +338,20 @@ background-color: var(--cloud);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #8e8f99;
-  border-radius: 2px;
+  border: 1px solid var(--light-slate);
+  color: var(--light-slate);
+  border-radius: 4px;
 }
-.customers-list-item{
+.customers-list-item{   
   height: 88px;
   width: calc((100% - 120px)/6);
+}
+.customers-link:hover, .customers-link:focus{
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+.customers-svg{
+  fill: currentColor;
 }
 /* Підвал */
 .footer {
@@ -421,6 +438,7 @@ margin-right: 120px;
 .item-button:focus {
   background-color: var(--ocean);
   color: var(--white);
+  cursor: pointer;
 }
 /* Сітка з апками */
 .app-list {
