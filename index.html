@@ -45,7 +45,7 @@
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button class="title-button" type="button">Order Service</button>
+          <button data-modal-open class="title-button" type="button">Order Service</button>
         </div>
       </section>
       <section class="advantages">
@@ -421,5 +421,23 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-button " type="button">X</button></div>
+    </div>
+    <script>(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();</script>
   </body>
 </html>
